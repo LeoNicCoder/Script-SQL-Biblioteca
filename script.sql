@@ -20,7 +20,7 @@ Nombre VARCHAR2(20) NOT NULL);
 --Tabla Editorial--
 CREATE TABLE Editorial
 (IdEditorial number(3) PRIMARY KEY,
-Nombre VARCHAR(30) NOT NULL,
+Nombre VARCHAR2(30) NOT NULL,
 CONSTRAINT FK_Editorial_Ubicacion 
 FOREIGN KEY (IdUbicacion)
 REFERENCES Ubicacion (IdUbicacion));
